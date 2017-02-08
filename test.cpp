@@ -42,7 +42,7 @@ int main()
       cout << *itr;
   }
   list<int>::iterator found = find(ages, target);
-  if(ack != ages.end()) {
+  if(found != ages.end()) {
       cout << "Found "<< *found<<endl;
   }
   int grubby = grub(ages, target);
