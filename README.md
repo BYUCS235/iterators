@@ -32,5 +32,11 @@ list<int>::iterator find(list<int>& a_list, int target) {
     }
     return a_list.end();
 }
-list<int>::iterator found = find(ages, target);
+main()
+{
+    list<int>::iterator found = find(ages, target);
+    if(found != ages.end()) {
+      cout << "Found "<< *found<<endl;
+    }
+}
 ```
